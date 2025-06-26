@@ -66,34 +66,39 @@ model = genai.GenerativeModel(
 # Streamlit page setup
 st.set_page_config(page_title="Visionary Insights", page_icon="🧠", layout="centered")
 
-# Custom CSS
+# Custom Red-Green Theme CSS
 st.markdown("""
     <style>
     body {
-        background-color: #f4f6f9;
+        background-color: #e8f5e9; /* Light green */
     }
     .stApp {
-        max-width: 800px;
+        max-width: 850px;
         margin: auto;
         padding: 2rem;
-        border-radius: 15px;
-        background-color: white;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 18px;
+        background-color: #fff5f5; /* Soft red */
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     }
     h1, h3 {
-        color: #0d3b66;
+        color: #8B0000; /* Dark red */
     }
     .stButton>button {
-        background-color: #007bff;
+        background-color: #388e3c; /* Deep green */
         color: white;
         font-weight: bold;
-        border-radius: 8px;
+        border-radius: 10px;
         height: 3em;
         width: 100%;
-        transition: 0.3s ease-in-out;
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
     }
     .stButton>button:hover {
-        background-color: #0056b3;
+        background-color: #1b5e20;
+        transform: scale(1.02);
+    }
+    .css-1cpxqw2, .css-1d391kg, .css-ffhzg2 {
+        color: #4e342e;
     }
     </style>
 """, unsafe_allow_html=True)
